@@ -6,7 +6,7 @@ public class Awake {
 
     // Public
 
-    @discardableResult public static func target(device: Device) -> Error? {
+    @discardableResult public static func target(device: Device) -> WakeError? {
         var sock: Int32
         var target = sockaddr_in()
 
